@@ -1,5 +1,9 @@
+{
+    %extends 'includes/header.html'
+}
 {% load django_bootsrap5%}
 <form class="row g-3">
+    {% csrf_token%}
     <div class="col-auto">
       <label for="staticEmail2" class="visually-hidden">FIRSTNAME</label>
       <input type="text"  class="form-control" id="staticEmail2" value="email@example.com">
@@ -22,3 +26,4 @@
       </button>
     </div>
   </form>
+  {% endblock content %}
