@@ -2,5 +2,9 @@
 {% load django_bootstrap5%}
 {% block content%}
 
+<h2>You have logged out</h2>
+<div class="border-top pt-3"style="min-height:65vh">
+    <small class="text-muted"><a href="{% url 'login' %}">Login Again</a></small>
 
+</div>
 {% endblock content%}
